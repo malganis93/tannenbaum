@@ -38,14 +38,12 @@ public class Tannenbaum {
 	{
 		String sp = "";
 		String sa = "";
-		for (int i=0;i<tag*2-1;i++){
-			sp+="-";
+		for (int i=0;i<tag;i++){
+			sp+="--";
+			sa+=" ";
 		}
 		System.out.println(sp);
 		
-		for (int i=0;i<tag-1;i++){
-			sa+=" ";
-		}
 		
 		System.out.println(sa+"||");
 		

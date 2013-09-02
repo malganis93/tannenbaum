@@ -6,12 +6,14 @@ public class Tannenbaum {
 	public static void main (String[] args)
 	{
 		int tag = 0;
-		System.out.println("Gib einen Tag ein?");
+		System.out.println("Gib einen Tag ein:");
+		
 		Scanner sc = new Scanner(System.in);
 		tag = sc.nextInt();
+		sc.close();
 		if (tag<2 || tag>31)
 		{
-			System.out.println("Der Tag darf nicht kleiner 2 und nicht groeﬂer 31 sein!");
+			System.out.println("Der Tag darf nicht kleiner 2 und nicht groesser 31 sein!");
 			System.exit(0);
 		}
 		UP_Spitze(tag);
